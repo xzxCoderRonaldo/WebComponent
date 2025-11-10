@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 30px;
+}
+
+.intro {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    border-radius: 4px;
+}
+
+.lead {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+.content {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.content.warning {
+    border-left: 4px solid #ffc107;
+    background: #fffbf0;
+}
+
+.content h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.content li:last-child {
+    border-bottom: none;
+}
+
+.content li::before {
+    content: "•";
+    position: absolute;
+    left: 10px;
+    color: #667eea;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.content li strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.tips {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.tips h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tips ol {
+    padding-left: 25px;
+}
+
+.tips li {
+    padding: 10px 0;
+    color: #555;
+}
+
+.tips li strong {
+    color: #667eea;
+}
+
+.summary {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 3px solid #667eea;
+}
+
+.summary h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.summary p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.summary p:last-of-type {
+    margin-bottom: 0;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    background: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .content, .tips, .summary {
+        padding: 20px;
+    }
+
+    .content h2, .tips h2, .summary h2 {
+        font-size: 1.3em;
+    }
+}
